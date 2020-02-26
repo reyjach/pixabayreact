@@ -16,7 +16,11 @@ class Resultado extends Component {
                         <Imagen key={imagen.id} imagen={imagen}></Imagen>
                     ))}
                 </div>
-                <Navegacion paginaAnterior={this.props.paginaAnterior} paginaSiguiente={this.props.paginaSiguiente}></Navegacion>
+                <Navegacion paginaAnterior={this.props.paginaAnterior} 
+                    paginaSiguiente={this.props.paginaSiguiente}
+                    pagina = {this.props.pagina}
+                    totalPaginas={this.props.totalPaginas}>
+                </Navegacion>
             </React.Fragment>
         )
     }
